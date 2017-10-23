@@ -1,0 +1,9 @@
+---
+#
+# Playbook: Local desa Servers
+#
+
+- hosts: local-pro
+
+  roles:
+    - web
