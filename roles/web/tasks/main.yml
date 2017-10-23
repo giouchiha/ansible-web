@@ -1,0 +1,9 @@
+---
+# tasks file for web
+- name: Copy Apache2 html web file
+  copy: src=files/index.html dest=/var/www/html/index.html owner=root group=root mode=0644
+  notify:
+   - restart apache2
+  tags:
+    - web_apache2
+
